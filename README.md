@@ -1,7 +1,6 @@
 # Circuiti Combinatori e Sequenziali
 
-Sito web semplice, realizzato **solo in HTML e CSS** (nessun Java, nessun
-JavaScript, nessun framework, nessun backend), che illustra due circuiti digitali:
+Sito web, realizzato **in HTML e CSS** che illustra due circuiti digitali:
 
 - **Full Adder** — circuito *combinatorio* che somma tre bit (A, B, Cin) e
   produce somma (S) e riporto (Cout).
