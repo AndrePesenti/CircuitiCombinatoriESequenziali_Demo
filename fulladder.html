@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Adder - Circuiti</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fulladder.html" class="attivo">Full Adder</a>
+      <a href="latch.html">Latch</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Full Adder</h1>
+
+    <div class="card">
+      <h2>Cos'è</h2>
+      <p>
+        Il <strong>Full Adder</strong> è un circuito combinatorio che somma tre bit:
+        due ingressi <strong>A</strong> e <strong>B</strong> e un riporto in ingresso
+        <strong>Cin</strong>. Produce due uscite: la <strong>somma (S)</strong> e il
+        riporto in uscita <strong>(Cout)</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Provalo</h2>
+      <div class="riga">
+        <div class="interruttore">
+          <span>A</span>
+          <button class="leva" id="btnA" onclick="cambia('A')">0</button>
+        </div>
+        <div class="interruttore">
+          <span>B</span>
+          <button class="leva" id="btnB" onclick="cambia('B')">0</button>
+        </div>
+        <div class="interruttore">
+          <span>Cin</span>
+          <button class="leva" id="btnCin" onclick="cambia('Cin')">0</button>
+        </div>
+      </div>
+      <div class="riga">
+        <span>Somma (S)</span>
+        <div class="output" id="outS">0</div>
+        <span>Riporto (Cout)</span>
+        <div class="output" id="outCout">0</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tabella di verità</h2>
+      <table>
+        <thead>
+          <tr><th>A</th><th>B</th><th>Cin</th><th>S</th><th>Cout</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+          <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>Circuiti Combinatori e Sequenziali</footer>
+
+  <script src="assets/fulladder.js"></script>
+</body>
+</html>
