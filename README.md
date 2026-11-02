@@ -1,15 +1,15 @@
 # Circuiti Combinatori e Sequenziali
 
-Sito web semplice, realizzato **solo in HTML, CSS e JavaScript** (nessun Java,
-nessun framework, nessun backend), che illustra due circuiti digitali:
+Sito web semplice, realizzato **solo in HTML e CSS** (nessun Java, nessun
+JavaScript, nessun framework, nessun backend), che illustra due circuiti digitali:
 
 - **Full Adder** — circuito *combinatorio* che somma tre bit (A, B, Cin) e
   produce somma (S) e riporto (Cout).
 - **Latch SR** — circuito *sequenziale* con ingressi Set (S) e Reset (R) che
   memorizza uno stato (uscite Q e Q̅).
 
-Ogni pagina contiene una spiegazione, una simulazione interattiva (premi i
-pulsanti per cambiare gli ingressi) e la relativa tabella di verità.
+Ogni pagina contiene una spiegazione e la relativa tabella di verità o di
+funzionamento.
 
 ## Struttura del progetto
 
@@ -19,9 +19,7 @@ pulsanti per cambiare gli ingressi) e la relativa tabella di verità.
 ├── fulladder.html        # Pagina del Full Adder
 ├── latch.html            # Pagina del Latch SR
 ├── assets/
-│   ├── style.css         # Fogli di stile
-│   ├── fulladder.js      # Logica della simulazione del Full Adder
-│   └── latch.js          # Logica della simulazione del Latch SR
+│   └── style.css         # Fogli di stile
 ├── Dockerfile            # Immagine per servire il sito (nginx)
 ├── docker-compose.yml    # Avvio semplificato con Docker Compose
 └── .dockerignore         # File esclusi dal contesto di build
@@ -125,7 +123,7 @@ Per lo sviluppo di questo progetto è stato utilizzato un assistente basato su
 intelligenza artificiale (modello `deepseek-v4-pro`, tramite lo strumento
 `opencode`). Lo strumento è stato impiegato come supporto nelle seguenti attività:
 
-- generazione e **miglioramento del codice** HTML/CSS/JavaScript delle pagine;
+- generazione e **miglioramento del codice** HTML/CSS delle pagine;
 - **ricerca di informazioni** sui circuiti (Full Adder e Latch SR) e sulle
   tecnologie utilizzate;
 - **gestione dei branch e dei commit** con Git;

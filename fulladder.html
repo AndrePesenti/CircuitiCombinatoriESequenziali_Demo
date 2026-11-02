@@ -29,26 +29,17 @@
     </div>
 
     <div class="card">
-      <h2>Provalo</h2>
+      <h2>Esempio</h2>
+      <p>
+        Con A=1, B=0 e Cin=1 il risultato è S=0 e Cout=1: infatti 1+0+1 = 2,
+        che in binario si scrive 10 (bit di somma 0 e riporto 1).
+      </p>
       <div class="riga">
-        <div class="interruttore">
-          <span>A</span>
-          <button class="leva" id="btnA" onclick="cambia('A')">0</button>
-        </div>
-        <div class="interruttore">
-          <span>B</span>
-          <button class="leva" id="btnB" onclick="cambia('B')">0</button>
-        </div>
-        <div class="interruttore">
-          <span>Cin</span>
-          <button class="leva" id="btnCin" onclick="cambia('Cin')">0</button>
-        </div>
-      </div>
-      <div class="riga">
-        <span>Somma (S)</span>
-        <div class="output" id="outS">0</div>
-        <span>Riporto (Cout)</span>
-        <div class="output" id="outCout">0</div>
+        <div class="segnale">A = <span class="valore uno">1</span></div>
+        <div class="segnale">B = <span class="valore zero">0</span></div>
+        <div class="segnale">Cin = <span class="valore uno">1</span></div>
+        <div class="segnale">S = <span class="valore zero">0</span></div>
+        <div class="segnale">Cout = <span class="valore uno">1</span></div>
       </div>
     </div>
 
@@ -73,7 +64,5 @@
   </main>
 
   <footer>Circuiti Combinatori e Sequenziali</footer>
-
-  <script src="assets/fulladder.js"></script>
 </body>
 </html>
