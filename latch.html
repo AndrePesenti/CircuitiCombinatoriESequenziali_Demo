@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latch - Circuiti</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fulladder.html">Full Adder</a>
+      <a href="latch.html" class="attivo">Latch</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Latch SR</h1>
+
+    <div class="card">
+      <h2>Cos'è</h2>
+      <p>
+        Il <strong>Latch SR</strong> è un circuito sequenziale con due ingressi
+        <strong>Set (S)</strong> e <strong>Reset (R)</strong> e due uscite
+        <strong>Q</strong> e <strong>Q̅</strong> (il suo complemento). A differenza
+        dei circuiti combinatori, il latch <em>memorizza</em> lo stato: l'uscita
+        dipende anche dalla storia degli ingressi.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Provalo</h2>
+      <div class="riga">
+        <div class="interruttore">
+          <span>S (Set)</span>
+          <button class="leva" id="btnS" onclick="setta('S')">0</button>
+        </div>
+        <div class="interruttore">
+          <span>R (Reset)</span>
+          <button class="leva" id="btnR" onclick="setta('R')">0</button>
+        </div>
+      </div>
+      <div class="riga">
+        <span>Q</span>
+        <div class="output" id="outQ">0</div>
+        <span>Q̅</span>
+        <div class="output" id="outQn">1</div>
+      </div>
+      <p id="messaggio" style="color:#f87171; min-height:1.5em;"></p>
+    </div>
+
+    <div class="card">
+      <h2>Tabella di funzionamento</h2>
+      <table>
+        <thead>
+          <tr><th>S</th><th>R</th><th>Q</th><th>Stato</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>0</td><td>0</td><td>invariato</td><td>Memoria</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td><td>Reset</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td><td>Set</td></tr>
+          <tr><td>1</td><td>1</td><td>-</td><td>Vietato</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>Circuiti Combinatori e Sequenziali</footer>
+
+  <script src="assets/latch.js"></script>
+</body>
+</html>
