@@ -30,24 +30,13 @@
     </div>
 
     <div class="card">
-      <h2>Provalo</h2>
-      <div class="riga">
-        <div class="interruttore">
-          <span>S (Set)</span>
-          <button class="leva" id="btnS" onclick="setta('S')">0</button>
-        </div>
-        <div class="interruttore">
-          <span>R (Reset)</span>
-          <button class="leva" id="btnR" onclick="setta('R')">0</button>
-        </div>
-      </div>
-      <div class="riga">
-        <span>Q</span>
-        <div class="output" id="outQ">0</div>
-        <span>Q̅</span>
-        <div class="output" id="outQn">1</div>
-      </div>
-      <p id="messaggio" style="color:#f87171; min-height:1.5em;"></p>
+      <h2>Come funziona</h2>
+      <ul>
+        <li><strong>S=0, R=0</strong>: il latch mantiene lo stato precedente (memoria).</li>
+        <li><strong>S=0, R=1</strong>: il latch si azzera, Q diventa 0 (Reset).</li>
+        <li><strong>S=1, R=0</strong>: il latch si imposta, Q diventa 1 (Set).</li>
+        <li><strong>S=1, R=1</strong>: combinazione vietata, da evitare.</li>
+      </ul>
     </div>
 
     <div class="card">
@@ -67,7 +56,5 @@
   </main>
 
   <footer>Circuiti Combinatori e Sequenziali</footer>
-
-  <script src="assets/latch.js"></script>
 </body>
 </html>

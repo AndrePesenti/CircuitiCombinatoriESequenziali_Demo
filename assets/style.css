@@ -77,41 +77,19 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.interruttore {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.5rem 1rem;
-}
-
-button.leva {
-  width: 70px;
-  height: 40px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
+.bottone {
+  display: inline-block;
+  text-decoration: none;
   color: white;
-  background: var(--off);
-  transition: background 0.15s;
-}
-
-button.leva.on {
-  background: var(--on);
-}
-
-.output {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  min-width: 80px;
-  padding: 0.6rem;
+  background: var(--accent-dark);
+  padding: 0.8rem 1.2rem;
   border-radius: 8px;
-  background: #0b1220;
-  color: var(--on);
-  border: 1px solid #334155;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.bottone:hover {
+  background: var(--accent);
 }
 
 .riga {
@@ -120,6 +98,26 @@ button.leva.on {
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
+}
+
+.segnale {
+  background: #0b1220;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.valore {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.valore.uno {
+  color: var(--on);
+}
+
+.valore.zero {
+  color: var(--off);
 }
 
 table {
